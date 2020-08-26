@@ -1,3 +1,12 @@
 tasks:
-  - init: 'echo "TODO: Replace with init/build command"'
-    command: 'python3 -m http.server 8080'
+  - init: odoo -r gitpod --addons-path=/workspace -d template1 -i base,typing_module -D /workspace/.odoo --stop-after-init
+    command: odoo -r gitpod --addons-path=/workspace -d template1 -i typing_module --dev xml -D /workspace/.odoo
+  - command: psql -U gitpod template1
+image:
+  file: .gitpod.Dockerfile
+vscode:
+  extensions:
+    - littlefoxteam.vscode-python-test-adapter@0.3.16:tZ/6xOSSdKUaq6JCUVkD+A==`
+    - mrorz.language-gettext@0.1.1:74p3WtjygwX9/E3GVChuUg==
+    - Gruntfuggly.todo-tree@0.0.176:cbaxSjN5CtxoSnZ5Xvqh3g==
+    - abusaidm.html-snippets@0.2.1:HrYIjYqOIABbxFB9g9kqXQ==
