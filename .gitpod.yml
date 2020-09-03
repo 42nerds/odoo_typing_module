@@ -1,7 +1,12 @@
+#tasks:
+#  - init: odoo -r gitpod --addons-path=/workspace -d template1 -i base,typing_module -D /workspace/.odoo --stop-after-init
+#    command: odoo -r gitpod --addons-path=/workspace -d template1 -i typing_module --dev xml -D /workspace/.odoo
+#  - command: psql -U gitpod template1
+#image:
+#  file: .gitpod.Dockerfile
 tasks:
-  - init: odoo -r gitpod --addons-path=/workspace -d template1 -i base,typing_module -D /workspace/.odoo --stop-after-init
-    command: odoo -r gitpod --addons-path=/workspace -d template1 -i typing_module --dev xml -D /workspace/.odoo
-  - command: psql -U gitpod template1
+  - init: odoo-bin -r gitpod --addons-path=/workspace -d template1 -i base,odoo_typing_module -D /workspace/.odoo --stop-after-init
+    command: odoo-bin -r gitpod --addons-path=/workspace -d template1 --dev all -D /workspace/.odoo
 image:
   file: .gitpod.Dockerfile
 vscode:
