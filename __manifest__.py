@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "42 N.E.R.D.S. Typing Module",
+    'name': "42 N.E.R.D.S Typing Module",
 
     'summary': """
         This module adds a snipped for the websitebuilder""",
@@ -20,8 +20,7 @@
         'website',
     ],
     'data': [
-        # 'security/ir.model.access.csv',
-        # 'views/templates.xml',
+        'views/snippets.xml',
     ],
     # 'demo': [
     #     'demo/demo.xml'
