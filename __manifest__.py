@@ -21,6 +21,7 @@
     ],
     'data': [
         'views/snippets.xml',
+        'views/options.xml',
     ],
     # 'demo': [
     #     'demo/demo.xml'
