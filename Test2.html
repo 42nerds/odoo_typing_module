@@ -1,19 +1,16 @@
-<odoo>
-  <template id="odoo_typing_module" name="Snippet Testimonial Options" inherit_id="website.snippet_options">
-    <xpath expr="//div[@data-js='background']" position="after">
-       <div data-selector=".snippet_c_banner > div">
-        <we-collapse-area>
-          <we-toggler><i class="fa fa-fw fa-magic"/> Type-Text</we-toggler>
-           <we-collapse>
-              <body>
+<html lang="de">
+    <head>
+        <title>ein primitiver HTML-Editor mit createElement()</title>
+    </head>
+<body>
     <main id="main">
     
         <form name="Formular" action="">
-        <input placeholder="Wort zum Einfügen." type="text" name="Elementinhalt" size="50"></input>
+        <input placeholder="Wort zum Einfügen." type="text" name="Elementinhalt" size="50">
         <button type="button" id="button">Hinzufügen</button>
         </form>
  
-        <ul id="Word"></ul>
+        <ul id="Word">
     
     </main>
         <script>
@@ -34,13 +31,4 @@
         }());
         </script>
     </body>
-           </we-collapse>
-        </we-collapse-area>
-      </div>
-    </xpath>
-  </template>
-  <template id="snippet_c_hero_unit_opt" name="Snippet Testimonial Options" inherit_id="website.snippet_options">
-    <xpath expr="//div[@data-js='background']" position="after">
-    </xpath>
-  </template>
-</odoo>
+</html>

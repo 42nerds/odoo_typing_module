@@ -1,17 +1,21 @@
 <html>
-  <head>
-    <title>Adrians Datenverarbeitung</title>
-    <link href="static/scss/index.css" rel="stylesheet" type="text/css" /> 
-  </head>
-  <body>
-<div class="input-group mb-3">
-  <input type="text" class="form-control" placeholder="Wort hinzufügen" aria-label="Recipient's username" aria-describedby="basic-addon2">
-  <div class="input-group-append">
-    <button class="btn btn-outline-secondary" type="button">Bestätigen</button>
-  </div>
-</div>
-<div>
-    
-</div>
-  </body>
+    <head>
+        <title>Adrians Datenverarbeitung</title>
+        <link href="static/scss/index.css" rel="stylesheet" type="text/css" /> 
+    </head>
+    <body>
+        <div class="input-group mb-3">
+            <input type="text" id="textfield" placeholder="Wort zum Hinzufügen">
+            <button onclick="myFunction()">Try it</button>
+            <p id="demo"></p>
+            <ul id="blub">
+            </ul>
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("textfield").value;
+                         document.getElementById("demo").innerHTML = x;
+                    }
+            </script>
+        </div>
+    </body> 
 </html>
