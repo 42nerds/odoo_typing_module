@@ -1,39 +1,17 @@
 <odoo>
+
+  <!-- Width Option for Custom Banner -->
   <template id="odoo_typing_module" name="Snippet Testimonial Options" inherit_id="website.snippet_options">
     <xpath expr="//div[@data-js='background']" position="after">
        <div data-selector=".snippet_c_banner > div">
         <we-collapse-area>
           <we-toggler><i class="fa fa-fw fa-magic"/> Type-Text</we-toggler>
            <we-collapse>
-              <body>
-    <main id="main">
-    
-        <form name="Formular" action="">
-        <input placeholder="Wort zum Einfügen." type="text" name="Elementinhalt" size="50"></input>
-        <button type="button" id="button">Hinzufügen</button>
-        </form>
- 
-        <ul id="Word"></ul>
-    
-    </main>
-        <script>
-        'use strict';  
-        (function () {
-            function init() {
-                document.getElementById('button').addEventListener('click', GeneralKenobi);
-            }
-        
-            function GeneralKenobi () {
-                var elementknoten = document.createElement("li");
-                var textknoten = document.createTextNode(document.Formular.Elementinhalt.value);
-                elementknoten.appendChild(textknoten);
-                document.getElementById('Word').appendChild(elementknoten);
-            }                
-            
-            document.addEventListener('DOMContentLoaded',init);
-        }());
-        </script>
-    </body>
+                <we-customizeblock-option><we-button data-add-tab="1" data-no-preview="true" class="snippet-option-typings">
+                 <i class="fa fa-fw fa-plus"></i> Wort Hinzufügen
+                </we-button><we-button data-remove-tab="1" data-no-preview="true" class="snippet-option-typings">
+                 <i class="fa fa-fw fa-minus"></i> Wort Entfernen
+                </we-button></we-customizeblock-option>
            </we-collapse>
         </we-collapse-area>
       </div>
