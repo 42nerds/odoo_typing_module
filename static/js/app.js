@@ -55,13 +55,3 @@ window.onload = function() {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
   document.body.appendChild(css);
 };
-
-odoo.define(function (require) {
-    var options = require('web_editor.snippets.options');
-    options.registry.snippet_testimonial_options = options.Class.extend({
-        onFocus: function () {
-            alert("On focus!")
-        },
-    });
-});
-
