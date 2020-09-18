@@ -1,15 +1,15 @@
-odoo.define("website_typed_text.editor", function(require) {
+odoo.define("odoo_typing_module.editor", function(require) {
     "use strict";
 
     var core = require("web.core");
     var options = require("web_editor.snippets.options");
-    var AnimatedTextMixin = require("website_typed_text.frontend").AnimatedTextMixin;
+    var AnimatedTextMixin = require("odoo_typing_module.frontend").AnimatedTextMixin;
     var Dialog = require("web.Dialog");
     var _t = core._t;
     var qweb = core.qweb;
 
     options.registry.typed_text = options.Class.extend(AnimatedTextMixin, {
-        xmlDependencies: ["/website_typed_text/static/src/xml/editor.xml"],
+        xmlDependencies: ["/odoo_typing_module/static/src/xml/editor.xml"],
 
         start: function() {
             this._super.apply(this, arguments);
@@ -118,7 +118,7 @@ odoo.define("website_typed_text.editor", function(require) {
             return new Dialog(this, {
                 title: _t("Typed Text Animation"),
                 $content: $(
-                    qweb.render("website_typed_text.Dialog", {
+                    qweb.render("odoo_typing_module.Dialog", {
                         currentSettings: currentSettings,
                     })
                 ),

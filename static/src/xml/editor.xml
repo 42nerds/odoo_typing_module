@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <templates>
-    <t t-name="website_typed_text.Dialog">
+    <t t-name="odoo_typing_module.Dialog">
         <div class="container">
             <div class="form-group row">
                 <label class="col-form-label col-md-3" for="strings">

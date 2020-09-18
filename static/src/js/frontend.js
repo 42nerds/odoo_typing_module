@@ -1,5 +1,5 @@
 /* global Typed*/
-odoo.define("website_typed_text.frontend", function(require) {
+odoo.define("odoo_typing_module.frontend", function(require) {
     "use strict";
 
     var snippetAnimation = require("website.content.snippets.animation");
